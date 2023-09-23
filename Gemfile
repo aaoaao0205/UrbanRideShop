@@ -76,4 +76,5 @@ group :production do
 end
 
   gem 'devise'
-  gem 'cancancan'
+  gem 'cancancan'   
+  gem 'webpacker'
