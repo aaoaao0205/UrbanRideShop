@@ -4,7 +4,7 @@
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-lg-6" style="background-color: #f0f0f0; padding: 20px;">
           <h2>Sign up</h2> 
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'new-user-registration' }) do |f| %>
+          <%= form_with model: @user, local: true, class: 'registration-main' do |f| %>
             <%= render "devise/shared/error_messages", resource: resource %>
 
               <div class="mb-3">
